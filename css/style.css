@@ -1,0 +1,338 @@
+/* Becker Decision Tree  */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 400;
+}
+
+a {
+	color: #4d95d8;
+	outline: none !important;
+}
+
+strong {
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 700;
+}
+
+small {
+	font-size: 0.6875em;
+	color: #003a5c;
+}
+
+h2 {
+	font-size: 3.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #4d95d8;
+}
+
+p {
+	font-size: 1.3125em;
+}
+
+.btn:focus,
+.btn:active {
+	outline: none !important;
+}
+
+
+
+/* HOME PAGE */
+
+.bg-image {
+	background: url('../images/home-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*min-height: 1000px;*/
+}
+
+.home {
+	padding-top: 200px;
+	margin-bottom: 100px;
+	/*min-height: 1100px;*/
+}
+
+.heading {
+	background-color: rgba(77, 149, 216, .9);
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	max-width: 800px;
+	padding: 35px;
+	margin: 0 auto;
+}
+
+.heading h2 {
+	margin: 0;
+}
+
+.copy {
+	background-color: rgba(255, 255, 255, .8);
+	padding: 30px 100px 0 100px;
+	text-align: center;
+	color: #4d4d4d;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.button-wrap {
+	text-align: center;
+	padding: 25px 0 50px 0;
+}
+
+.btn-primary {
+	background-color: #003a5c;
+	color: #ffffff;
+	font-size: 1.25em;
+	width: 230px;
+	border-radius: 30px;
+}
+
+.footer-home {
+	background-color: #ffffff;
+/*	position: absolute;
+	width: 100%;
+	bottom: 0;*/
+}
+
+.footer {
+	background-color: #ffffff;
+}
+
+.footer-img-wrap {
+	padding: 20px 0 15px 0;
+}
+
+.small-copy-wrap {
+	padding: 10px 0 10px 0;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+/* QUESTION PAGE */
+
+.header {
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+	background-position: 100% 50%;
+	height: 298px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.header h2 {
+	line-height: 290px;
+}
+
+.question-wrap {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.question-copy {
+	text-align: center;
+	padding: 25px 0 25px 0;
+}
+
+.radio-wrap {
+	max-width: 590px;
+	margin: 0 auto;
+}
+
+.number {
+	color: #4d95d8;
+	font-size: 2.375em;
+}
+
+label {
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125em;
+	border: 1px solid #003a5c;
+	color: #003a5c;
+	width: 560px;
+	padding: 10px;
+}
+
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    position: relative;
+    left: 10px;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #003a5c;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*.checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    background: rebeccapurple;
+    color: #fff;
+}*/
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s ease all;
+    left: -35px;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+	background-color: #003a5c;
+	/*box-shadow: 0 0 0 2px #4d95d8;*/
+    /*content: "\f111";*/
+    /*font-family: 'FontAwesome';*/
+    /*color: #003a5c;*/
+    position: relative;
+    left: -35px;
+}
+
+ .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+
+/* RESULT PAGE */
+
+.result {
+	text-align: center;
+}
+
+.result-heading-wrap {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 100px 0 100px;
+}
+
+.result-wrap {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+}
+
+@media (max-width: 1024px) {
+
+	.home {
+		padding: 100px 0 100px 0;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.copy {
+		padding: 30px 50px 0 50px;
+	}
+
+	.result-heading-wrap {
+		padding: 0 20px 0 20px;
+	}
+
+}
+
+@media (max-width: 435px) {
+
+	.btn-primary {
+		width: 170px;
+		font-size: 1em;
+	}
+
+	label {
+		width: 90%;
+		font-size: 1em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	.header h2 {
+		font-size: 3em;
+		line-height: 260px;
+	}
+
+	.home h2 {
+		font-size: 2em;
+	}
+
+	.home {
+		padding: 50px 0 50px 0;
+		min-height: 100%
+	}
+
+	.copy {
+		padding: 30px 25px 0 25px;
+	}
+
+	.result-heading-wrap {
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+	.btn-primary {
+		width: 130px;
+		font-size: .75em;
+	}
+
+	.header h2 {
+		font-size: 2.5em;
+		line-height: 248px;
+	}
+
+	label {
+		font-size: 0.875em;
+	}
+
+}
