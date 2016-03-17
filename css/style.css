@@ -26,7 +26,28 @@ strong {
 
 small {
 	font-size: 0.6875em;
-	color: #003a5c;
+	color: #ffffff;
+}
+
+small a {
+	color: #ffffff;
+}
+
+small a:hover {
+	color: #4d95d8;
+}
+
+small.blue {
+	color: #4d95d8;
+}
+
+small.blue a {
+	color: #4d95d8;
+}
+
+small.blue a:hover {
+	color: #4d95d8;
+	text-decoration: underline;
 }
 
 h2 {
@@ -61,13 +82,22 @@ p {
  	-moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*min-height: 1000px;*/
 }
 
 .home {
 	padding-top: 200px;
 	margin-bottom: 100px;
-	/*min-height: 1100px;*/
+}
+
+.logo {
+	background-color: #ffffff;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.logo img {
+	height: 100px;
 }
 
 .heading {
@@ -86,7 +116,7 @@ p {
 
 .copy {
 	background-color: rgba(255, 255, 255, .8);
-	padding: 30px 100px 0 100px;
+	padding: 50px 100px 0 100px;
 	text-align: center;
 	color: #4d4d4d;
 	max-width: 800px;
@@ -108,31 +138,14 @@ p {
 
 .footer-home {
 	background-color: #ffffff;
-/*	position: absolute;
-	width: 100%;
-	bottom: 0;*/
 }
 
 .footer {
 	background-color: #ffffff;
 }
 
-.footer-img-wrap {
-	padding: 20px 0 15px 0;
-}
-
 .small-copy-wrap {
 	padding: 10px 0 10px 0;
-}
-
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.Site-content {
-  flex: 1;
 }
 
 /* QUESTION PAGE */
@@ -213,13 +226,6 @@ label {
     text-align: center;
 }
 
-/*.checkbox-custom:checked + .checkbox-custom-label:before {
-    content: "\f00c";
-    font-family: 'FontAwesome';
-    background: rebeccapurple;
-    color: #fff;
-}*/
-
 .radio-custom + .radio-custom-label:before {
     border-radius: 50%;
     position: relative;
@@ -229,10 +235,6 @@ label {
 
 .radio-custom:checked + .radio-custom-label:before {
 	background-color: #003a5c;
-	/*box-shadow: 0 0 0 2px #4d95d8;*/
-    /*content: "\f111";*/
-    /*font-family: 'FontAwesome';*/
-    /*color: #003a5c;*/
     position: relative;
     left: -35px;
 }
@@ -250,7 +252,7 @@ label {
 .result-heading-wrap {
 	max-width: 900px;
 	margin: 0 auto;
-	padding: 0 100px 0 100px;
+	padding: 0 90px 0 90px;
 }
 
 .result-wrap {
@@ -295,9 +297,13 @@ label {
 		font-size: 1em;
 	}
 
+	.header {
+		height: 100px;
+	}
+
 	.header h2 {
 		font-size: 3em;
-		line-height: 260px;
+		line-height: 60px;
 	}
 
 	.home h2 {
@@ -305,8 +311,8 @@ label {
 	}
 
 	.home {
-		padding: 50px 0 50px 0;
-		min-height: 100%
+		padding: 15px 0 0 0;
+		margin-bottom: 0;
 	}
 
 	.copy {
