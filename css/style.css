@@ -38,11 +38,12 @@ small a:hover {
 }
 
 small.blue {
-	color: #4d95d8;
+	color: #a8a8a8;
 }
 
 small.blue a {
-	color: #4d95d8;
+	color: #a8a8a8;
+
 }
 
 small.blue a:hover {
@@ -100,6 +101,12 @@ p {
 	height: 100px;
 }
 
+.tagline h4 {
+	color: #a8a8a8;
+	font-size: 1em;
+	margin: 0;
+}
+
 .heading {
 	background-color: rgba(77, 149, 216, .9);
 	text-transform: uppercase;
@@ -145,7 +152,8 @@ p {
 }
 
 .small-copy-wrap {
-	padding: 10px 0 10px 0;
+	padding: 20px 0 10px 0;
+	margin-bottom: 10px;
 }
 
 /* QUESTION PAGE */
@@ -255,10 +263,17 @@ label {
 	padding: 0 90px 0 90px;
 }
 
-.result-wrap {
+.result-wrap-one {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 0 10px 0 10px;
+}
+
+.result-wrap-two {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	border-bottom: 1px solid #a8a8a8;
 }
 
 @media (max-width: 1024px) {
