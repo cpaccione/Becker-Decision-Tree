@@ -296,6 +296,12 @@ label {
 
 }
 
+@media (max-width: 500px) {
+	.header h2 {
+		font-size: 2.5em;
+	}
+}
+
 @media (max-width: 435px) {
 
 	.btn-primary {
@@ -356,4 +362,10 @@ label {
 		font-size: 0.875em;
 	}
 
+}
+
+@media (max-width: 315px) {
+	.header h2 {
+		font-size: .75em;
+	}
 }
