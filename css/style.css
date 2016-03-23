@@ -16,6 +16,7 @@ body {
 a {
 	color: #4d95d8;
 	outline: none !important;
+	text-decoration: underline;
 }
 
 strong {
@@ -274,6 +275,10 @@ label {
 	margin: 0 auto;
 	padding: 0 10px 0 10px;
 	border-bottom: 1px solid #a8a8a8;
+}
+
+.test-link {
+	padding: 20px 0 0 0;
 }
 
 @media (max-width: 1024px) {
