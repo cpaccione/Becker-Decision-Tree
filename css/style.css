@@ -231,7 +231,7 @@ label {
     width: 20px;
     height: 20px;
     padding: 2px;
-    margin-right: 10px;
+	margin-right: -20px;  /* I added margin right -20px to account for the indented quetions. This should fix the problem across the board.*/
     text-align: center;
 }
 
